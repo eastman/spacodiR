@@ -1,0 +1,14 @@
+Package: spacodi
+Type: Package
+Title: Spatial and Phylogenetic Analysis of Community Diversity
+Version: 0.10.05022010
+Date: 2010-05-02
+Author: Olivier Hardy, Timothy Paine, and Jonathan Eastman
+Maintainer: Olivier Hardy <ohardy@ulb.ac.be>
+Depends: ape, geiger, picante, calibrate
+Description: SPACoDi is primarily designed to characterise the structure
+       and phylogenetic diversity of communities using abundance or
+       presence-absence data of species among community plots. 
+License: GPL (>=2)
+LazyLoad: yes
+Packaged: 2010-05-21 18:40:00 UTC; jeastman
