@@ -1,5 +1,6 @@
 \name{spacodi-internal}
 \alias{add.transparency}
+\alias{apd}
 \alias{check.distmat}
 \alias{cophen}
 \alias{debug}
