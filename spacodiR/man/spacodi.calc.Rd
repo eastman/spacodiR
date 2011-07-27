@@ -29,6 +29,9 @@
   If a phylogeny or trait dataset is supplied with species that are not present in the community dataset (i.e., \code{sp.plot}) or vice versa, 
   the user has the option to dynamically prune these datasets to match (\code{prune=TRUE}). If \code{prune=FALSE} and dataset mismatches occur, 
   the function will inevitably return \code{NaN} where plots have fewer than two distinct species sampled. 
+  
+  FORMULAE
+  \deqn{D_k = \frac{n_i}{n_i-1}\sum_i\sum_j{\delta_{ij}f_{ik}f_{jk} }}
 }
 
 \value{ 
