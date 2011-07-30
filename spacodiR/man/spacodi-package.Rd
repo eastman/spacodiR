@@ -1,7 +1,6 @@
 \name{spacodi}
 
 \alias{spacodi}
-\alias{spacodiR}
 
 \docType{package}
 

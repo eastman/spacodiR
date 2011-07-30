@@ -1,7 +1,6 @@
 useDynLib(spacodiR)
 export(
 add.transparency,
-apd,
 as.phylocom,
 as.picante,
 as.spacodi,

@@ -1,7 +1,6 @@
 CHANGES IN spacodiR VERSION 0.11
-2011-06-21
-  * added apd() for abundance phylogenetic deviation (sensu HARDY 2008 J Ecol)
-  * storing repository at https://github.com/eastman/spacodiR
+2011-07-29
+  * fixed bug in resamp.1s
 
 2011-04-01
   * added cophen() for rapid computation of the cophenetic matrix 

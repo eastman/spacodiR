@@ -125,7 +125,7 @@ reorderspacodiobj=function(obj, names) {
 	if(class(obj)=="phylo") {
 		obj.labels=obj$tip.label
 		if(any(!obj.labels%in%names)) obj=drop.tip(obj, obj.labels[!obj.labels%in%names]) else obj=obj
-	} else if(check.distmat(obj)) {
+	} else if(class(obj)=="dist")) {
 		obj.labels=rownames(obj)
 		obj=as.matrix(obj[match(names,obj.labels),match(names,obj.labels)])
 		rownames(obj)<-colnames(obj)<-names
