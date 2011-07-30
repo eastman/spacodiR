@@ -1,6 +1,6 @@
 ######
 check.distmat=function(obj,tol=1e-9) {
-	if(class(obj)=="matrix") {
+	if(class(obj)=="matrix" & length(unique(dim(obj)))==1) {
 		if(all(diag(obj)-0<=tol)) {
 			return(TRUE)
 		} else {
@@ -125,7 +125,7 @@ reorderspacodiobj=function(obj, names) {
 	if(class(obj)=="phylo") {
 		obj.labels=obj$tip.label
 		if(any(!obj.labels%in%names)) obj=drop.tip(obj, obj.labels[!obj.labels%in%names]) else obj=obj
-	} else if(class(obj)=="dist")) {
+	} else if(check.distmat(obj)) {
 		obj.labels=rownames(obj)
 		obj=as.matrix(obj[match(names,obj.labels),match(names,obj.labels)])
 		rownames(obj)<-colnames(obj)<-names
