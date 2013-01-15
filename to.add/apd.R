@@ -2,7 +2,7 @@ apd=function(sp.plot, cophen, abundance=TRUE){
 	PDij=cophen[upper.tri(cophen)]
 	spl=sp.plot
 	N=unique(dim(cophen))
-	if(length(dim)!=1) stop("cophenetic matrix appears improperly formatted")
+#	if(length(dim)!=1) stop("cophenetic matrix appears improperly formatted")
 	if(!all(rownames(cophen)==rownames(spl))){
 		spl=as.matrix(spl[match(rownames(spl),rownames(cophen)),],ncol=ncol(spl))
 		spl=as.data.frame(spl)
